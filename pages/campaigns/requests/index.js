@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Button, Table } from 'semantic-ui-react';
-import { Link } from '../../../routes';
-import Layout from '../../../components/Layout';
-import Campaign from '../../../ethereum/campaign';
-import RequestRow from '../../../components/RequestRow';
+import React, { Component } from "react";
+import { Button, Table } from "semantic-ui-react";
+import { Link } from "../../../routes";
+import Layout from "../../../components/Layout";
+import Campaign from "../../../ethereum/campaign";
+import RequestRow from "../../../components/RequestRow";
 
 class RequestIndex extends Component {
   static async getInitialProps(props) {
@@ -42,7 +42,7 @@ class RequestIndex extends Component {
 
     return (
       <Layout>
-        <h3>Requests</h3>
+        <h3 style={{ color: "wheat", fontSize: "1.6rem" }}>Requests</h3>
         <Link route={`/campaigns/${this.props.address}/requests/new`}>
           <a>
             <Button primary floated="right" style={{ marginBottom: 10 }}>
@@ -64,7 +64,9 @@ class RequestIndex extends Component {
           </Header>
           <Body>{this.renderRows()}</Body>
         </Table>
-        <div>Found {this.props.requestCount} requests.</div>
+        <div style={{ color: "wheat", fontSize: "1.2rem", marginTop: "4rem" }}>
+          Found {this.props.requestCount} requests.
+        </div>
       </Layout>
     );
   }
