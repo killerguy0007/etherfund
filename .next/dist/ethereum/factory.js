@@ -1,0 +1,22 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _web = require('./web3.js');
+
+var _web2 = _interopRequireDefault(_web);
+
+var _CampaignFactory = require('./build/CampaignFactory.json');
+
+var _CampaignFactory2 = _interopRequireDefault(_CampaignFactory);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//this is used by the react app
+var instance = new _web2.default.eth.Contract(JSON.parse(_CampaignFactory2.default.interface), '0x0f3939b9E1B44a2313634ea5650C110FB0f0C7E4');
+
+exports.default = instance;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVua25vd24iXSwibmFtZXMiOlsiaW5zdGFuY2UiLCJldGgiLCJDb250cmFjdCIsIkpTT04iLCJwYXJzZSIsImludGVyZmFjZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQ0E7Ozs7QUFDQTs7Ozs7O0FBRkE7QUFJQSxJQUFJQSxXQUFXLElBQUksY0FBS0MsR0FBTCxDQUFTQyxRQUFiLENBQXNCQyxLQUFLQyxLQUFMLENBQVcsMEJBQWdCQyxTQUEzQixDQUF0QixFQUE2RCw0Q0FBN0QsQ0FBZjs7a0JBRWVMLFEiLCJmaWxlIjoidW5rbm93biIsInNvdXJjZXNDb250ZW50IjpbIi8vdGhpcyBpcyB1c2VkIGJ5IHRoZSByZWFjdCBhcHBcbmltcG9ydCB3ZWIzIGZyb20gJy4vd2ViMy5qcyc7XG5pbXBvcnQgQ2FtcGFpZ25GYWN0b3J5IGZyb20gJy4vYnVpbGQvQ2FtcGFpZ25GYWN0b3J5Lmpzb24nO1xuXG52YXIgaW5zdGFuY2UgPSBuZXcgd2ViMy5ldGguQ29udHJhY3QoSlNPTi5wYXJzZShDYW1wYWlnbkZhY3RvcnkuaW50ZXJmYWNlKSwgJzB4MGYzOTM5YjlFMUI0NGEyMzEzNjM0ZWE1NjUwQzExMEZCMGYwQzdFNCcpO1xuXG5leHBvcnQgZGVmYXVsdCBpbnN0YW5jZTsiXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVua25vd24iXSwibmFtZXMiOlsiaW5zdGFuY2UiLCJldGgiLCJDb250cmFjdCIsIkpTT04iLCJwYXJzZSIsImludGVyZmFjZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQ0E7Ozs7QUFDQTs7Ozs7O0FBRkE7QUFJQSxJQUFJQSxXQUFXLElBQUksY0FBS0MsR0FBTCxDQUFTQyxRQUFiLENBQXNCQyxLQUFLQyxLQUFMLENBQVcsMEJBQWdCQyxTQUEzQixDQUF0QixFQUE2RCw0Q0FBN0QsQ0FBZjs7a0JBRWVMLFEiLCJmaWxlIjoidW5rbm93biJ9
